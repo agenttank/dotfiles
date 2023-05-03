@@ -1,3 +1,11 @@
-*
+/*
 !.gitignore
-!test
+.config
+!.config/alacritty.yml
+!.config/wofi/*
+!.config/waybar/**
+!.config/wal/
+!.config/sway/
+!.config/qutebrowser/
+!.config/pavucontrol.ini
+!.config/OpenRGB/
