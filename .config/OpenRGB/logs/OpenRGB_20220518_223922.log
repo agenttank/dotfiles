@@ -1,0 +1,44 @@
+    OpenRGB v0.7
+    Commit:  from 
+    Launched: 20220518_223922
+====================================================================================================
+
+1000  |Info:    ------------------------------------------------------
+1000  |Info:    |               Start device detection               |
+1000  |Info:    ------------------------------------------------------
+1000  |Info:    Initializing HID interfaces: Success
+1002  |Info:    ------------------------------------------------------
+1002  |Info:    |             Detecting I2C interfaces               |
+1002  |Info:    ------------------------------------------------------
+1004  |Info:    Registering I2C interface: /dev/i2c-3 Device 1002:687F Subsystem: 1043:0555
+1004  |Info:    Registering I2C interface: /dev/i2c-1 Device 1022:790B Subsystem: 1043:87C0
+1004  |Info:    Registering I2C interface: /dev/i2c-8 Device 0000:0000 Subsystem: 0000:0000
+1004  |Info:    Registering I2C interface: /dev/i2c-6 Device 1002:687F Subsystem: 1043:0555
+1004  |Info:    Registering I2C interface: /dev/i2c-4 Device 1002:687F Subsystem: 1043:0555
+1005  |Info:    Registering I2C interface: /dev/i2c-2 Device 1022:790B Subsystem: 1043:87C0
+1005  |Info:    Registering I2C interface: /dev/i2c-0 Device 1022:790B Subsystem: 1043:87C0
+1005  |Info:    Registering I2C interface: /dev/i2c-9 Device 0000:0000 Subsystem: 0000:0000
+1005  |Info:    Registering I2C interface: /dev/i2c-7 Device 1002:687F Subsystem: 1043:0555
+1005  |Info:    Registering I2C interface: /dev/i2c-5 Device 1002:687F Subsystem: 1043:0555
+1005  |Info:    ------------------------------------------------------
+1005  |Info:    |               Detecting I2C devices                |
+1005  |Info:    ------------------------------------------------------
+1030  |Info:    Loading plugins
+1757  |Info:    ------------------------------------------------------
+1757  |Info:    |               Detecting HID devices                |
+1757  |Info:    ------------------------------------------------------
+1836  |Info:    [ASUS ROG STRIX B550-F GAMING] Registering RGB controller
+1836  |Info:    ------------------------------------------------------
+1836  |Info:    |              Detecting other devices               |
+1836  |Info:    ------------------------------------------------------
+1840  |Info:    ------------------------------------------------------
+1840  |Info:    |                Detection completed                 |
+1840  |Info:    ------------------------------------------------------
+127238|Info:    Closing server connection: 127.0.0.1
+132876|Info:    Closing server connection: 127.0.0.1
+194737|Info:    Closing server connection: 127.0.0.1
+231134|Info:    Closing server connection: 127.0.0.1
+267763|Info:    Closing server connection: 127.0.0.1
+279697|Info:    Closing server connection: 127.0.0.1
+321678|Info:    Closing server connection: 127.0.0.1
+333112|Info:    Closing server connection: 127.0.0.1

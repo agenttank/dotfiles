@@ -1,0 +1,155 @@
+@import "/home/stefan/.cache/wal/colors-waybar.css";
+* {
+  border: none;
+  border-radius: 0;
+  font-family: system-ui, "Symbols Nerd Font", sans-serif;
+  font-size: 13px;
+  min-height: 0;
+}
+
+window#waybar {
+  background-color: rgba(43, 48, 59, 0.5);
+  border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+  color: #ffffff;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+  opacity: 0.2;
+}
+
+window#waybar.empty {
+  background-color: transparent;
+}
+window#waybar.solo {
+  background-color: #000000;
+}
+
+window#waybar.alacritty {
+  background-color: #000000;
+}
+
+window#waybar.firefox {
+  background-color: #2f343f;
+  border: none;
+}
+
+window#waybar.discord {
+  background-color: #36393f;
+  border: 2px solid #2e3035;
+  color: transparent;
+}
+
+window#waybar.telegramdesktop {
+  background-color: #17212b;
+  border-top: 1px solid #101921;
+  color: transparent;
+}
+
+#workspaces button {
+  padding: 0 5px;
+  background-color: transparent;
+  color: #ffffff;
+  border-bottom: 3px solid transparent;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inherit;
+  border-bottom: 3px solid #ffffff;
+}
+
+#workspaces button.visible {
+  border-bottom: 3px solid #ffffff;
+}
+
+#mode {
+  background-color: #64727d;
+  border-bottom: 3px solid #ffffff;
+}
+
+#custom-systemd,
+#custom-mic,
+#mode,
+#custom-khal,
+#pulseaudio,
+#battery,
+#clock {
+  padding: 0 10px;
+  margin: 0 4px;
+  color: #ffffff;
+}
+
+#clock {
+  margin-right: 0;
+  border-bottom: 3px solid #64727d;
+  border-top: 2px solid transparent;
+}
+
+#battery {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+#battery.charging {
+  color: #ffffff;
+  background-color: #26a65b;
+}
+
+@keyframes blink {
+  to {
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: #f53c3c;
+  color: #ffffff;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+label:focus {
+  background-color: #000000;
+}
+
+#pulseaudio:not(.muted) {
+  background-color: #2980b9;
+}
+
+#pulseaudio.muted {
+  border-bottom: 3px solid #90b1b1;
+  border-top: 2px solid transparent;
+}
+
+#custom-mic {
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  padding: 0 6px;
+}
+
+#custom-mic.muted {
+  background-color: transparent;
+}
+
+#custom-mic.not-muted {
+  background-color: #eb4d4b;
+  color: #ffffff;
+}
+
+#custom-khal {
+  padding-bottom: 0;
+  border-bottom: 3px solid #209050;
+  border-top: 2px solid transparent;
+}
+
+#custom-systemd {
+  border-bottom: 3px solid orange;
+  border-top: 2px solid transparent;
+}

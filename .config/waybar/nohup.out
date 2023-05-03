@@ -1,0 +1,18 @@
+[2023-05-02 12:50:12.036] [info] Using configuration file /home/stefan/.config/waybar/config
+[2023-05-02 12:50:12.036] [info] Using CSS file /home/stefan/.config/waybar/style.css
+[2023-05-02 12:50:12.057] [warning] module sway/mode: Disabling module "sway/mode", Socket path is empty
+[2023-05-02 12:50:12.071] [warning] module sway/window: Disabling module "sway/window", Socket path is empty
+No players found
+[2023-05-02 12:50:12.097] [warning] As using a timezone, some format args may be missing as the date library haven't got a release since 2018.
+[2023-05-02 12:50:12.244] [info] Bar configured (width: 2560, height: 35) for output: DP-2
+No players found
+[2023-05-02 12:54:22.432] [info] Using configuration file /home/stefan/.config/waybar/config
+[2023-05-02 12:54:22.432] [info] Using CSS file /home/stefan/.config/waybar/style.css
+[2023-05-02 12:54:22.455] [warning] module sway/mode: Disabling module "sway/mode", Socket path is empty
+[2023-05-02 12:54:22.470] [warning] module sway/window: Disabling module "sway/window", Socket path is empty
+No players found
+[2023-05-02 12:54:22.488] [warning] As using a timezone, some format args may be missing as the date library haven't got a release since 2018.
+[2023-05-02 12:54:22.641] [info] Bar configured (width: 2560, height: 35) for output: DP-2
+No players found
+No players found
+No players found

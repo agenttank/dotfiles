@@ -1,0 +1,21 @@
+$wallpaper = "{wallpaper}"
+
+#$background = 3f0f22
+#$foreground = #e9d8cd
+
+$color0 = {color0.strip}aa
+$color1 = {color1.strip}aa
+$color2 = {color2.strip}aa
+$color3 = {color3.strip}aa
+$color4 = {color4.strip}aa
+$color5 = {color5.strip}aa
+$color6 = {color6.strip}aa
+$color7 = {color7.strip}aa
+$color8 = {color8.strip}aa
+$color9 = {color9.strip}aa
+$color10 = {color10.strip}aa
+$color11 = {color11.strip}aa
+$color12 = {color12.strip}aa
+$color13 = {color13.strip}aa
+$color14 = {color14.strip}aa
+$color15 = {color15.strip}aa

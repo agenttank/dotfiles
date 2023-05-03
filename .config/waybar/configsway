@@ -1,0 +1,164 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "top", // Waybar at the bottom of your screen
+    "height": 35, // Waybar height
+    // "width": 1280, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["custom/arch", "wlr/workspaces", "sway/mode", "custom/music"],
+    "modules-center": ["sway/window"],
+    "modules-right": ["custom/display", "custom/iota", "cpu", "custom/temp", "memory", "custom/root", "custom/home", "custom/main", "custom/backup", "custom/scratch", "pulseaudio", "tray", "clock"],
+    // Modules configuration
+    "wlr/workspaces": {
+         "disable-scroll": false,
+         "all-outputs": true,
+         //"format": "{name}: {icon}",
+         "format": "{icon}",
+         "format-icons": {
+             "1": "I",
+             "2": "II",
+            "3": "III",
+            "4": "IV",
+             "5": "V",
+             "6": "VI",
+             "7": "VII",
+             "8": "VIII",
+	     "9": "IX",
+		"10": "X"
+         }
+     },
+    "sway/mode": {
+        "format": "<span style=\"italic\" color=\"red\">{}</span>",
+	"max-length": 20
+    },
+    "tray": {
+        // "icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "format": "{:%A %d.%m.%Y %H:%M}",
+    	"on-click": "alacritty -e khal interactive"
+    },
+    "cpu": {
+        "format": "  {usage}% "
+    }, 
+    "memory": {
+        "format": "   {}%"
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    },
+    "battery#bat2": {
+        "bat": "BAT2"
+    },
+    "network": {
+        // "interface": "wlp2s0", // (Optional) To force the use of this interface
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "  {ifname}: {ipaddr}/{cidr} ",
+        "format-disconnected": "⚠ Disconnected "
+    },
+    "pulseaudio": {
+        //"scroll-step": 5,
+        "format": " {icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphones": "",
+            "handsfree": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+"custom/temp": {
+        "format": "  {} ",
+	"interval": 2,
+        "exec": "$HOME/.config/scripts/temp.sh 2> /dev/null"
+    },
+"custom/root": {
+        "format": " / {} ",
+	"interval": 200,
+        "exec": "$HOME/.config/scripts/rootspace.sh 2> /dev/null"
+    },
+"custom/home": {
+        "format": "  {} ",
+	"interval": 200,
+        "exec": "$HOME/.config/scripts/homespace.sh 2> /dev/null"
+    },
+"custom/main": {
+        "format": "  {} ",
+	"interval": 200,
+        "exec": "$HOME/.config/scripts/mainspace.sh 2> /dev/null"
+    },
+"custom/backup": {
+        "format": "  {} ",
+	"interval": 200,
+        "exec": "$HOME/.config/scripts/backupspace.sh 2> /dev/null"
+    },   
+"custom/scratch": {
+        "format": "  {} ",
+	"interval": 200,
+        "exec": "$HOME/.config/scripts/scratchspace.sh 2> /dev/null"
+    },
+"custom/iota2": {
+        "format": " {} ",
+	"interval": 3000,
+        "exec": "$HOME/iota.sh | head -n1 2> /dev/null",
+    	"on-click": "/usr/bin/qutebrowser https://www.binance.com/en/trade/IOTA_USDT"
+    },
+"custom/iota": {
+        "format": " ${} ",
+	"interval": 100,
+        "exec": "$HOME/.config/sway/iota_price.sh 2> /dev/null",
+    	"on-click": "/usr/bin/qutebrowser https://www.binance.com/en/trade/IOTA_USDT"
+    },
+"custom/arch": {
+        "format": "  ",
+	"interval": "once",
+        "exec": "echo isl 2> /dev/null",
+	"on-click": "$HOME/.config/sway/change_wallpaper.sh",
+	"on-click-right": "$HOME/.config/sway/change_wallpaper.sh"
+    },
+//"custom/music": {
+//       "format": "  ♪ {} ♪",
+//"max-length": 15,
+//        "interval": 3,
+//        "exec": "music-remote -C \"format_print '%a - %t'\"", // artist - title
+//        "exec-if": "pgrep music",
+//        "on-click": "music-remote -u",                        //toggle pause
+//        "escape": true                                       //handle markup entities
+//   }
+"custom/music": {
+        "format": "  ♪ {} ♪",
+        "max-length": 15,
+	"max-length": 55,
+        "interval": 3,
+        "exec": "echo $(playerctl metadata artist) - $(playerctl metadata title)",
+        "exec-if": "playerctl status",
+        "escape": true
+},
+//"custom/display": {
+//        "format": " {} ",
+//        //"max-length": 15,
+//        "interval": 3,
+//        "exec": "~/.config/sway/countoutputs.sh", // Anzahl der Bildschirme
+//        "escape": true                                       //handle markup entities
+//    },
+"custom/redshift": {
+        "format": " {} ",
+        //"max-length": 15,
+        "interval": 3,
+        "exec": "echo test > /dev/null 2>&1", // Anzahl der Bildschirme
+        "escape": true                                       //handle markup entities
+	}
+}
