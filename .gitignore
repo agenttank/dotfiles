@@ -6,6 +6,7 @@
 !.config/alacritty.yml
 !.config/wofi/
 !.config/waybar/
+!.config/hypr/
 !.config/wal/
 !.config/sway/
 !.config/qutebrowser/
