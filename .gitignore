@@ -11,3 +11,4 @@
 !.config/qutebrowser/
 !.config/OpenRGB/
 !.config/pavucontrol.ini
+.config/**/*.log
