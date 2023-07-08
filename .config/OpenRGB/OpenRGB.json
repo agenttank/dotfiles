@@ -1064,6 +1064,15 @@
             14306703760882907409
         ]
     },
+    "Plugins": {
+        "plugins": [
+            {
+                "description": "Provides a variety of custom effects",
+                "enabled": true,
+                "name": "OpenRGB Effects Plugin"
+            }
+        ]
+    },
     "Theme": {
         "theme": "dark"
     },

@@ -37,7 +37,7 @@ iota https://explorer.iota.org/mainnet
 dc1 https://dc1.pinter-net.at:8443/
 mus http://rpi-music.pinter-net.at/playback
 cul https://www.yeggi.com/q/pokemon+marshadow/
-hy https://hypervisor.pinter-net.at/ui/#/login
+hy https://hypervisor.pinter-net.at/#v1:0:18:4:::::::
 print https://print.pinter-net.at/#temp
 nas https://nas.pinter-net.at/ui/sessions/signin
 fw https://fw.pinter-net.at/
