@@ -39,7 +39,7 @@ mus http://rpi-music.pinter-net.at/playback
 cul https://www.yeggi.com/q/pokemon+marshadow/
 hy https://hypervisor.pinter-net.at/#v1:0:18:4:::::::
 print https://print.pinter-net.at/#temp
-nas https://nas.pinter-net.at/ui/sessions/signin
+nas https://nas.pinter-net.at/#v1:0:18:4:::::::
 fw https://fw.pinter-net.at/
 zen https://zentyal.pinter-net.at/Login/Index
 dl https://dl.pinter-net.at/
@@ -48,3 +48,4 @@ trans https://trans.pinter-net.at/transmission/web/#cancel
 graf https://grafana.pinter-net.at/login
 portainer https://portainer.pinter-net.at
 selfhost https://github.com/awesome-selfhosted/awesome-selfhosted#media-streaming---video-streaming
+omv https://omv.pinter-net.at/#/login
