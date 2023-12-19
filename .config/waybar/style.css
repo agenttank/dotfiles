@@ -2,8 +2,8 @@
 * {
     border: none;
     border-radius: 0;
-    font-family: Rioboto, "Font Awesome 5 Pro Solid", "Font Awesome 5 Brands";
-    font-size: 16px;
+    font-family: "FuraMono Nerd Font";
+    font-size: 13px;
     min-height: 0;
 }
 
@@ -24,12 +24,12 @@ window#waybar {
 #custom-arch {
 	color: @color3;
 	background-color: transparent;
-	background: rgba(40, 40, 40, 0.3);
-	border: 3;
-        font-family: "FuraMono Nerd Font";
-	border-bottom: 1px solid transparent;
-	font-size: 20px;
-	border-radius: 1px;
+	background: rgba(40, 40, 40, 0.6);
+	border: 0;
+    font-family: "FuraMono Nerd Font";
+	border-bottom: 3px solid transparent;
+	font-size: 22px;
+	border-radius: 10px;
 }
 
 #workspaces button {
@@ -39,7 +39,7 @@ window#waybar {
     border-top: 2px solid transparent;
 }
 
-#workspaces button.active {
+#workspaces button.focused {
     color: @color3;
     border-top: 2px solid @color15;
 }
