@@ -49,3 +49,8 @@ graf https://grafana.pinter-net.at/login
 portainer https://portainer.pinter-net.at
 selfhost https://github.com/awesome-selfhosted/awesome-selfhosted#media-streaming---video-streaming
 omv https://omv.pinter-net.at/#/login
+media https://media.pinter-net.at/web/index.html#!/
+prometheus https://prometheus.pinter-net.at/targets?search=
+alert https://alertmanager.pinter-net.at/#/alerts
+home https://home.pinter-net.at/board
+plex https://media.pinter-net.at/web/index.html#!/

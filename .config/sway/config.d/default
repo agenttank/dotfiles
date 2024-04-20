@@ -234,4 +234,8 @@ bindsym XF86Search exec $menu
 #
 # Keybindings List
 #
+
+
 #    bindsym $mod+t exec xed ~/.config/sway/cheatsheet
+
+exec_always /sbin/python ~/.config/sway/scripts/swayfader.py  
